@@ -1,0 +1,8 @@
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\bin\Debug\TaxPayment.exe.config
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\bin\Debug\TaxPayment.exe
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\bin\Debug\TaxPayment.pdb
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.AssemblyReference.cache
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.SuggestedBindingRedirects.cache
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.CoreCompileInputs.cache
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.exe
+C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.pdb
