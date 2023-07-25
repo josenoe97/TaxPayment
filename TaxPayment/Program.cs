@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 using TaxPayment.Entities;
+using TaxPayment.Entities.Exceptions;
 
 namespace TaxPayment
 {
@@ -14,36 +15,48 @@ namespace TaxPayment
         {
             List<TaxPayer> listPayer = new List<TaxPayer>();
 
-            Console.Write("Enter the number of tax payers: ");
-            int n = int.Parse(Console.ReadLine());
-
-            for (int i = 1; i <= n; i++)
+            try
             {
-                Console.WriteLine($"Tax payer #{i} data: ");
+                Console.Write("Enter the number of tax payers: ");
+                int n = int.Parse(Console.ReadLine());
 
-                Console.Write("Individual or company (i/c)? ");
-                char ch = char.Parse(Console.ReadLine().ToUpper());
-
-                Console.Write("Name: ");
-                string name = Console.ReadLine();
-
-                Console.Write("Anual income: ");
-                double anualIncome = double.Parse(Console.ReadLine() , CultureInfo.InvariantCulture);
-
-                if (ch == 'I')
+                for (int i = 1; i <= n; i++)
                 {
-                    Console.Write("Health expenditures: ");
-                    double heathExpenditures = double.Parse(Console.ReadLine() ,CultureInfo.InvariantCulture);
+                    Console.WriteLine($"Tax payer #{i} data: ");
 
-                    listPayer.Add(new Individual(name, anualIncome, heathExpenditures));
-                }
-                else if(ch == 'C')
-                {
-                    Console.Write("Number of employees: ");
-                    int numberEmployees = int.Parse(Console.ReadLine());
+                    Console.Write("Individual or company (i/c)? ");
+                    char ch = char.Parse(Console.ReadLine().ToUpper());
 
-                    listPayer.Add(new Company(name, anualIncome, numberEmployees));
+                    Console.Write("Name: ");
+                    string name = Console.ReadLine();
+
+                    Console.Write("Anual income: ");
+                    double anualIncome = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                    if (ch == 'I')
+                    {
+                        Console.Write("Health expenditures: ");
+                        double heathExpenditures = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        listPayer.Add(new Individual(name, anualIncome, heathExpenditures));
+                    }
+                    else if (ch == 'C')
+                    {
+                        Console.Write("Number of employees: ");
+                        int numberEmployees = int.Parse(Console.ReadLine());
+
+                        listPayer.Add(new Company(name, anualIncome, numberEmployees));
+                    }
                 }
+
+            }
+            catch (DomainException ex)
+            {
+                Console.WriteLine($"Error : {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unexpected error: {ex.Message}" );
             }
 
             Console.WriteLine();

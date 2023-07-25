@@ -6,3 +6,11 @@ C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.cspr
 C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.CoreCompileInputs.cache
 C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.exe
 C:\Users\2022100077\source\repos\TaxPayment\TaxPayment\obj\Debug\TaxPayment.pdb
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\bin\Debug\TaxPayment.exe.config
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\bin\Debug\TaxPayment.exe
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\bin\Debug\TaxPayment.pdb
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.AssemblyReference.cache
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.SuggestedBindingRedirects.cache
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\obj\Debug\TaxPayment.csproj.CoreCompileInputs.cache
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\obj\Debug\TaxPayment.exe
+H:\VisualStudio\Udemy\Tax_Payment\TaxPayment\TaxPayment\obj\Debug\TaxPayment.pdb

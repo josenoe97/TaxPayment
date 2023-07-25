@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Company.cs" />
+    <Compile Include="Entities\Exceptions\DomainException.cs" />
     <Compile Include="Entities\Individual.cs" />
     <Compile Include="Entities\TaxPayer.cs" />
     <Compile Include="Program.cs" />

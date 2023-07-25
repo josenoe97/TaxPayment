@@ -1,4 +1,6 @@
-﻿namespace TaxPayment.Entities
+﻿using TaxPayment.Entities.Exceptions;
+
+namespace TaxPayment.Entities
 {
     internal class Individual : TaxPayer
     {
@@ -7,6 +9,10 @@
         public Individual(string name, double anualIncome, double healthExpenditures) 
             : base(name , anualIncome)
         {
+            if (healthExpenditures < 0)
+            {
+                throw new DomainException("health expenditures can't be negative");
+            }
             HealthExpenditures = healthExpenditures;
         }
 
